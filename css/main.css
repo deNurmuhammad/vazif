@@ -19,19 +19,7 @@ background: #23242a;
     border-radius: 8px;
     overflow:  hidden;
 }
-.box::after{
-    content: '';
-    position: absolute;
-    width: 380px;
-    height: 420px;
-    top: -50%;
-    left: -50%;
-    background: linear-gradient(0deg,transparent,transparent,#ff2270,#ff2270,#ff2270);
-    z-index: 1;
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay:-1.5s  ;
-}
+
 .box form{
     position: absolute;
     inset: 4px;
@@ -142,23 +130,12 @@ margin-top: 10px;
     height: 420px;
     top: -50%;
     left: -50%;
-    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
     z-index: 1;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay:-3s ;
 }
-@keyframes animate 
-{
-    0%
-    {
-            transform: rotate(0deg);
-    }
-    100%
-    {
-        transform: rotate(360deg);
-    }
-}
+
 .borderLine{
     position: absolute;
     top: 0;
@@ -176,17 +153,4 @@ margin-top: 10px;
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
     animation-delay:-1.5s  ;
-}
-.borderLine::after{
-    content: '';
-    position: absolute;
-    width: 380px;
-    height: 420px;
-    top: -50%;
-    left: -50%;
-    background: linear-gradient(0deg,transparent,transparent,#ff2270,#ff2270,#ff2270);
-    z-index: 1;
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay:-4.5s  ;
 }
